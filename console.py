@@ -54,7 +54,7 @@ class HBNBCommand(cmd.Cmd):
                 new_dict[key] = value
         return new_dict
 
-    def do_create(self, arg):
+    def do_create(self, line):
         """Creates a new instance of a class"""
         try:
              if not line:
