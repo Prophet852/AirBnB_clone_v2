@@ -28,8 +28,6 @@ class BaseModel:
             created_at: creation date
             updated_at: updated date
         """
-        self.id = str(uuid4())
-        self.created_at = self.updated_at = datetime.utcnow()
         if kwargs:
             for key, value in kwargs.items():
                 if key == "created_at" or key == "updated_at":
